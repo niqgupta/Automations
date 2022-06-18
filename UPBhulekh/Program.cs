@@ -1,9 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using Newtonsoft.Json;
 using UPBhulekh.CSV;
 using UPBhulekh.Data_Contract;
 using UPBhulekh.Data_Request;
-using UPBhulekh.LookForName;
 
 Console.WriteLine("Starting now .. ");
 
