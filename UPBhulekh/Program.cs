@@ -28,7 +28,9 @@ foreach (Tehsil tehsil in tehsilRequest.Execute())
                 VillageName = village.Name,
                 VillageCode = village.Code,
                 ParganaName = village.ParganaName,
-                ParganaCode = village.ParganaCode
+                ParganaCode = village.ParganaCode,
+                TehsilName = tehsil.Name,
+                TehsilCode = tehsil.Code
             });
             break;
         }

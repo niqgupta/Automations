@@ -24,5 +24,11 @@ namespace UPBhulekh.CSV
 
         [Index(6)]
         public string ParganaCode { get; set; } = string.Empty;
+
+        [Index(7)]
+        public string TehsilName { get; set; } = string.Empty;
+
+        [Index(8)]
+        public string TehsilCode { get; set; } = string.Empty;
     }
 }
