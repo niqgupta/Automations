@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using UPBhulekh.Common;
 using UPBhulekh.CSV;
 using UPBhulekh.Data_Contract;
 using UPBhulekh.Data_Request;
@@ -6,30 +7,38 @@ using UPBhulekh.Data_Request;
 Console.WriteLine("Starting now .. ");
 
 FileWriter outputFile = new FileWriter(@"C:\Users\Nikhil\Downloads\UPBhulekh.csv");
-FillVillageRequest request = new FillVillageRequest("190", "00962");
-List<Village> villages = request.Execute();
-List<KhataDetails> khataDetails = new List<KhataDetails>();
-
-foreach (Village village in villages)
+List<KhataDetails> allKhataDetails = new List<KhataDetails>();
+FillTehsilRequest tehsilRequest = new FillTehsilRequest(Constants.DC_DEORIA);
+foreach (Tehsil tehsil in tehsilRequest.Execute())
 {
-    SBNameRequest sbRequest = new SBNameRequest(village.Code, "अशोक");
-    List<Khata> khatas = sbRequest.Execute();
-
-    foreach (Khata khata in khatas)
+    Console.Write("T");
+    FillVillageRequest villageRequest = new FillVillageRequest(Constants.DC_DEORIA, tehsil.Code);
+    foreach (Village village in villageRequest.Execute())
     {
-        khataDetails.Add(new KhataDetails { 
-            Number = khata.Number,
-            Owner = khata.Owner,
-            FatherName = khata.FatherName,
-            VillageName = village.Name,
-            VillageCode = village.Code,
-            ParganaName = village.ParganaName,
-            ParganaCode = village.ParganaCode
-        });
+        Console.Write("V");
+        SBNameRequest sbNameRequest = new SBNameRequest(village.Code, Constants.OWNER_ASHOK);
+        foreach (Khata khata in sbNameRequest.Execute())
+        {
+            Console.Write("K");
+            allKhataDetails.Add(new KhataDetails
+            {
+                Number = khata.Number,
+                Owner = khata.Owner,
+                FatherName = khata.FatherName,
+                VillageName = village.Name,
+                VillageCode = village.Code,
+                ParganaName = village.ParganaName,
+                ParganaCode = village.ParganaCode
+            });
+            break;
+        }
+        Console.WriteLine();
+        break;
     }
+    break;
 }
 
-outputFile.Write(khataDetails);
+outputFile.Write(allKhataDetails);
 
 
 Console.WriteLine("Completed !!");

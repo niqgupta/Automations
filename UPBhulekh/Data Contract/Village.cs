@@ -11,7 +11,7 @@ namespace UPBhulekh.Data_Contract
         public string Code { get; set; } = string.Empty;
 
         [JsonProperty("vname_eng")]
-        public string NameInEng { get; set; } = string.Empty;
+        public string NameInEnglish { get; set; } = string.Empty;
 
         [JsonProperty("pname")]
         public string ParganaName { get; set; } = string.Empty;
