@@ -8,6 +8,8 @@ Console.WriteLine("Starting now .. ");
 
 FileWriter outputFile = new FileWriter(@"C:\Users\Nikhil\Downloads\UPBhulekh.csv");
 List<KhataDetails> allKhataDetails = new List<KhataDetails>();
+
+Console.Write("D");
 FillTehsilRequest tehsilRequest = new FillTehsilRequest(Constants.DC_DEORIA);
 foreach (Tehsil tehsil in tehsilRequest.Execute())
 {
@@ -32,12 +34,9 @@ foreach (Tehsil tehsil in tehsilRequest.Execute())
                 TehsilName = tehsil.Name,
                 TehsilCode = tehsil.Code
             });
-            break;
         }
         Console.WriteLine();
-        break;
     }
-    break;
 }
 
 outputFile.Write(allKhataDetails);
