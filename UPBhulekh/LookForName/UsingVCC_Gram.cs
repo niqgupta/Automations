@@ -1,7 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using CsvHelper;
+using CsvHelper.Configuration;
+using Newtonsoft.Json;
 using RestSharp;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -53,6 +56,25 @@ namespace UPBhulekh.LookForName
         public List<string> LookName_KhataNo(string name)
         {
             return _KhataDetails.Where(x => x.name != null && x.name.Contains(name)).Select(x => x.khata_number).ToList();
+        }
+
+        public void Publish(string file)
+        {
+            var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                HasHeaderRecord = false
+            };
+
+            using (var stream = File.Open(file, FileMode.Append))
+            {
+                using (var writer = new StreamWriter(stream, Encoding.UTF8))
+                {
+                    using (var csv = new CsvWriter(writer, csvConfig))
+                    {
+                        csv.WriteRecords(_KhataDetails);
+                    }
+                }
+            }
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CsvHelper.Configuration.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,8 +10,11 @@ namespace UPBhulekh.Data_Contract
 {
     public class KhataNameFather
     {
-        public string? khata_number;
-        public string? name;
-        public string? father;
+        [Index(0)]
+        public string? khata_number { get; set; }
+        [Index(1)]
+        public string? name { get; set; }
+        [Index(2)]
+        public string? father { get; set; }
     }
 }
