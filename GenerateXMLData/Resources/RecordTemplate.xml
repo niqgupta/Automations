@@ -1,0 +1,197 @@
+<Record>
+	<Field FieldName="Person.Schluessel">
+		<String>{0}</String>
+	</Field>
+	<Field FieldName="Stelle.Schluessel">
+		<String>{1}</String>
+	</Field>
+	<Field FieldName="Quellsystem.Schluessel">
+		<String>{2}</String>
+	</Field>
+	<Field FieldName="Person.Nummer">
+		<String>{3}</String>
+	</Field>
+	<Field FieldName="Person.Anrede">
+		<String>{4}</String>
+	</Field>
+	<Field FieldName="Person.Vorname">
+		<String>{5}</String>
+	</Field>
+	<Field FieldName="Person.Nachname">
+		<String>{6}</String>
+	</Field>
+	<Field FieldName="Person.Rolle">
+		<String>{7}</String>
+	</Field>
+	<Field FieldName="Person.Anwesenheit">
+		<String>{8}</String>
+	</Field>
+	<Field FieldName="Person.IstEinrichtungsAdministrator">
+		<String>{9}</String>
+	</Field>
+	<Field FieldName="Person.Weiterbildungsprogramm">
+		<String>{10}</String>
+	</Field>
+	<Field FieldName="Person.ZugriffAufOrgEinheit">
+		<String>{11}</String>
+	</Field>
+	<Field FieldName="Person.ZugriffAufMatrixOrgEinheit">
+		<String>{12}</String>
+	</Field>
+	<Field FieldName="Person.ZugriffAufModule">
+		<String>{13}</String>
+	</Field>
+	<Field FieldName="Person.NetzwerkIstAngezeigt">
+		<String>{14}</String>
+	</Field>
+	<Field FieldName="Person.Lohndatenzugriff">
+		<String>{15}</String>
+	</Field>
+	<Field FieldName="Person.Sprache">
+		<String>{17}</String>
+	</Field>
+	<Field FieldName="Person.Geburtsort">
+		<String>{18}</String>
+	</Field>
+	<Field FieldName="Person.Nationalitaet">
+		<String>{19}</String>
+	</Field>
+	<Field FieldName="Person.Zivilstand">
+		<String>{20}</String>
+	</Field>
+	<Field FieldName="Person.Antrittsdatum">
+		<String>{21}</String>
+	</Field>
+	<Field FieldName="Person.Austrittsdatum">
+		<String>{22}</String>
+	</Field>
+	<Field FieldName="Person.PersonalienBenutzerdefDatum1">
+		<String>{23}</String>
+	</Field>
+	<Field FieldName="Person.Fuehrerschein">
+		<String>{24}</String>
+	</Field>
+	<Field FieldName="Person.Kommentar">
+		<String>{25}</String>
+	</Field>
+	<Field FieldName="Person.KorrespondenzAdresse">
+		<String>{26}</String>
+	</Field>
+	<Field FieldName="Person.AdresseGeschaeft">
+		<String>{27}</String>
+	</Field>
+	<Field FieldName="Person.PLZGeschaeft">
+		<String>{28}</String>
+	</Field>
+	<Field FieldName="Person.OrtGeschaeft">
+		<String>{29}</String>
+	</Field>
+	<Field FieldName="Person.LandGeschaeft">
+		<String>{30}</String>
+	</Field>
+	<Field FieldName="Person.TelDirektGeschaeft">
+		<String>{31}</String>
+	</Field>
+	<Field FieldName="Person.TelZentralGeschaeft">
+		<String>{32}</String>
+	</Field>
+	<Field FieldName="Person.FaxGeschaeft">
+		<String>{33}</String>
+	</Field>
+	<Field FieldName="Person.HomepageGeschaeft">
+		<String>{34}</String>
+	</Field>
+	<Field FieldName="Person.EmailGeschaeft">
+		<String>{35}</String>
+	</Field>
+	<Field FieldName="Person.Login">
+		<String>{36}</String>
+	</Field>
+	<Field FieldName="Stelle.Bezeichnung">
+		<String>{37}</String>
+	</Field>
+	<Field FieldName="Stelle.Antrittsdatum">
+		<String>{38}</String>
+	</Field>
+	<Field FieldName="Stelle.Austrittsdatum">
+		<String>{39}</String>
+	</Field>
+	<Field FieldName="Stelle.Kommentar">
+		<String>{40}</String>
+	</Field>
+	<Field FieldName="Stelle.Aktualitaet">
+		<String>{41}</String>
+	</Field>
+	<Field FieldName="Stelle.MAGJaNein">
+		<String>{42}</String>
+	</Field>
+	<Field FieldName="Stelle.LeistungszieleJaNein">
+		<String>{43}</String>
+	</Field>
+	<Field FieldName="Stelle.StellenaufgabenJaNein">
+		<String>{44}</String>
+	</Field>
+	<Field FieldName="Stelle.KompetenzenJaNein">
+		<String>{45}</String>
+	</Field>
+	<Field FieldName="Stelle.EntwicklungszieleJaNein">
+		<String>{46}</String>
+	</Field>
+	<Field FieldName="Stelle.VerhaltenJaNein">
+		<String>{47}</String>
+	</Field>
+	<Field FieldName="Stelle.FeedbackJaNein">
+		<String>{48}</String>
+	</Field>
+	<Field FieldName="Stelle.PotentialJaNein">
+		<String>{49}</String>
+	</Field>
+	<Field FieldName="Stelle.Funktionsbereich">
+		<String>{50}</String>
+	</Field>
+	<Field FieldName="Stelle.Funktionsprofil">
+		<String>{51}</String>
+	</Field>
+	<Field FieldName="Stelle.Fuehrungsverantwortung">
+		<String>{52}</String>
+	</Field>
+	<Field FieldName="Stelle.PositionStufe">
+		<String>{53}</String>
+	</Field>
+	<Field FieldName="Stelle.Stellenart">
+		<String>{54}</String>
+	</Field>
+	<Field FieldName="Stelle.Arbeitsregion">
+		<String>{55}</String>
+	</Field>
+	<Field FieldName="Stelle.Arbeitsort">
+		<String>{56}</String>
+	</Field>
+	<Field FieldName="Stelle.Jobsprache">
+		<String>{57}</String>
+	</Field>
+	<Field FieldName="Stelle.Beschaeftigungsgrad">
+		<String>{58}</String>
+	</Field>
+	<Field FieldName="Stelle.LohnID">
+		<String>{59}</String>
+	</Field>
+	<Field FieldName="Stelle.DatumLohn">
+		<String>{60}</String>
+	</Field>
+	<Field FieldName="Stelle.LohnIstAktuell">
+		<String>{61}</String>
+	</Field>
+	<Field FieldName="Stelle.Bruttolohn">
+		<String>{62}</String>
+	</Field>
+	<Field FieldName="Stelle.Waehrung">
+		<String>{63}</String>
+	</Field>
+	<Field FieldName="Stelle.BudgetGruppe">
+		<String>{64}</String>
+	</Field>
+	<Field FieldName="Stelle.Stellenbewertung">
+		<String>{65}</String>
+	</Field>
+</Record>
