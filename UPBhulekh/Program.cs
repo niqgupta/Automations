@@ -10,7 +10,7 @@ FileWriter outputFile = new FileWriter(@"C:\Users\Nikhil\Downloads\UPBhulekh.csv
 List<KhataDetails> allKhataDetails = new List<KhataDetails>();
 
 Console.Write("D");
-FillTehsilRequest tehsilRequest = new FillTehsilRequest(Constants.DC_DEORIA);
+FillTehsilRequest tehsilRequest = new FillTehsilRequest(Constants.DC_MAHARAJGANJ);
 foreach (Tehsil tehsil in tehsilRequest.Execute())
 {
     Console.Write("T");

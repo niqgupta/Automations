@@ -19,6 +19,7 @@
         public const string FNV_VF = "वर्तमान+फसली";
 
         public const string DC_DEORIA = "190";
+        public const string DC_MAHARAJGANJ = "187";
 
         public const string OWNER_ASHOK = "अशोक";
         public const string OWNER_RAMSUBHAG = "रामसुभग";
